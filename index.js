@@ -16,10 +16,13 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const mainRouter = require("./routers/index")
 app.use(mainRouter)
 
-app.listen(process.env.PORT || 3000, (err)=>{
-    if(!err){
-        db()
-        console.log("server is live");
-        console.log("http://localhost:"+3000)
-    }
-})
+
+module.exports = app;
+
+// app.listen(process.env.PORT || 3000, (err)=>{
+//     if(!err){
+//         db()
+//         console.log("server is live");
+//         console.log("http://localhost:"+3000)
+//     }
+// })
