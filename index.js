@@ -16,7 +16,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const mainRouter = require("./routers/index")
 app.use(mainRouter)
 
-app.listen(3000 || process.env.PORT, (err)=>{
+app.listen(process.env.PORT || 3000, (err)=>{
     if(!err){
         db()
         console.log("server is live");
