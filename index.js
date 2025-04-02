@@ -4,7 +4,7 @@ const db = require("./configs/dbconnection")
 const path = require("path");
 // const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
-const session = require("express-session");
+// const session = require("express-session");
 const multer  = require('multer')
 
 app.set("view engine", "ejs");
